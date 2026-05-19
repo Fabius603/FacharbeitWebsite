@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <div class="progress-bar" id="progressBar"></div>
+
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="site-brand">← Facharbeit · Mina Pöppe · 2026</a>
@@ -16,21 +18,22 @@
 
   <nav class="sticky-nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html">Überblick</a>
+      <a href="index.html">Start</a>
       <a href="grundlagen.html">Grundlagen</a>
       <a href="methode.html">Methode</a>
       <a href="ergebnisse.html" class="active">Ergebnisse</a>
       <a href="diskussion.html">Diskussion</a>
       <a href="fazit.html">Fazit</a>
+      <a href="quellen.html">Quellen</a>
     </div>
   </nav>
 
   <main>
     <section id="ergebnisse" class="section section-alt">
       <div class="container">
-        <div class="section-label">Ergebnisse</div>
+        <div class="section-label">Kapitel 5 · Darstellung der Ergebnisse</div>
         <h2>Was hat die Befragung ergeben?</h2>
-        <p class="section-intro">Die Ergebnisse zeigen ein deutliches Bild: Kinder im Kindergartenalter nehmen sehr klare geschlechtliche Zuordnungen vor – in fast allen befragten Bereichen.</p>
+        <p class="section-intro">Die Ergebnisse zeigen ein deutliches Bild: Kinder im Kindergartenalter nehmen sehr klare geschlechtliche Zuordnungen vor – in fast allen <a href="methode.html#design" class="inline-link">befragten Bereichen</a>. Besonders Spielzeug, Farben und Kleidung wurden nahezu einstimmig einem Geschlecht zugeordnet.</p>
 
         <div class="results-tabs" id="results-tabs">
           <div class="rtab-buttons">
@@ -208,7 +211,19 @@
         <div class="key-finding">
           <div class="kf-icon">🔑</div>
           <div class="kf-text">
-            <strong>Zentrale Beobachtung:</strong> Mädchen waren bei Fragen zu Handlungen und Spielzeug flexibler eingestellt. Jungen zeigten dafür beim <em>äußeren Erscheinungsbild</em> eher mehr Offenheit. Insgesamt hielten sich die Unterschiede zwischen den Geschlechtern die Waage.
+            <strong>Zentrale Beobachtung:</strong> Mädchen waren bei Fragen zu Handlungen und Spielzeug flexibler eingestellt. Jungen zeigten dafür beim <em>äußeren Erscheinungsbild</em> eher mehr Offenheit. Insgesamt hielten sich die Unterschiede zwischen den Geschlechtern die Waage – mehr dazu in der <a href="diskussion.html" class="inline-link">Diskussion</a>.
+          </div>
+        </div>
+
+        <div id="grenzen" class="content-block" style="margin-top:2.5rem;">
+          <h3 class="content-h3">5.2 Grenzen der Methode</h3>
+          <p>Die Methode ist für Kinder im Alter von 3 bis 6 Jahren gut geeignet, weil sie mit einfachen, alltagsnahen Fragen arbeitet. Dennoch gibt es mehrere Einschränkungen:</p>
+          <div class="info-box">
+            <ul style="padding-left:1.2rem; margin:0;">
+              <li>Die <a href="methode.html#stichprobe" class="inline-link">Stichprobe</a> mit 17 Kindern ist relativ klein – eine Verallgemeinerung der Ergebnisse ist nur eingeschränkt möglich.</li>
+              <li>Bilder und die Art der Fragestellung könnten die Antworten der Kinder beeinflusst haben.</li>
+              <li>Es kann nur eingeschränkt geprüft werden, ob Jungen sich stärker an Stereotypen orientieren als Mädchen, da die Stichprobe zu klein ist.</li>
+            </ul>
           </div>
         </div>
 
@@ -223,10 +238,14 @@
   <footer class="footer">
     <div class="container">
       <p>Facharbeit von <strong>Mina Pöppe</strong> · Gymnasium Uslar · Seminarfach „männlich und weiblich" · 18. März 2026</p>
-      <p class="footer-small">Quellen: Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)</p>
+      <p class="footer-small">
+        <a href="quellen.html" class="footer-link">Quellen</a> ·
+        Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)
+      </p>
     </div>
   </footer>
 
+  <button class="back-to-top" id="backToTop" aria-label="Nach oben">↑</button>
   <script src="script.js"></script>
 </body>
 </html>

@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grundlagen – Wie nehmen Kinder Geschlechterrollen wahr?</title>
+  <title>Theoretische Grundlagen – Wie nehmen Kinder Geschlechterrollen wahr?</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <div class="progress-bar" id="progressBar"></div>
 
   <header class="site-header">
     <div class="container">
@@ -16,139 +18,155 @@
 
   <nav class="sticky-nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html">Überblick</a>
+      <a href="index.html">Start</a>
       <a href="grundlagen.html" class="active">Grundlagen</a>
       <a href="methode.html">Methode</a>
       <a href="ergebnisse.html">Ergebnisse</a>
       <a href="diskussion.html">Diskussion</a>
       <a href="fazit.html">Fazit</a>
+      <a href="quellen.html">Quellen</a>
     </div>
   </nav>
 
   <main>
-    <section id="grundlagen" class="section section-alt">
+    <section class="section section-alt">
       <div class="container">
-        <div class="section-label">Theoretische Grundlagen</div>
-        <h2>Was sind Geschlechterrollen?</h2>
-        <p class="section-intro">Bevor man Kinder beobachtet, muss man verstehen, was Geschlechterrollen überhaupt sind – und wie sie entstehen.</p>
+        <div class="section-label">Kapitel 2 · Theoretische Grundlagen</div>
+        <h2>Was sind Geschlechterrollen – und wie entstehen sie?</h2>
+        <p class="section-intro">Bevor die eigene Untersuchung erklärt wird, müssen die zentralen Begriffe geklärt werden. Außerdem zeigt die Forschung: Kinder entwickeln <a href="#entstehung" class="inline-link">Geschlechterstereotype erstaunlich früh</a>.</p>
 
-        <div class="tabs" id="tabs">
-          <div class="tab-buttons">
-            <button class="tab-btn active" data-tab="begriffe">Begriffe</button>
-            <button class="tab-btn" data-tab="entstehung">Entstehung</button>
-            <button class="tab-btn" data-tab="einfluss">Einflüsse</button>
-          </div>
+        <!-- 2.1 BEGRIFFE -->
+        <div id="begriffe" class="content-block">
+          <h3 class="content-h3">2.1 Geschlecht, Geschlechterrollen und Geschlechterstereotype</h3>
+          <p>Für diese Arbeit ist zunächst zwischen dem <strong>biologischen Geschlecht</strong> und den gesellschaftlichen Vorstellungen zu unterscheiden, die mit „männlich" und „weiblich" verbunden werden. Im Zentrum steht hier <em>nicht</em> die biologische Unterscheidung, sondern die soziale Bedeutung von Geschlecht im Alltag.</p>
 
-          <div class="tab-content active" id="tab-begriffe">
-            <div class="tab-inner">
-              <div class="tab-text">
-                <h3>Geschlecht, Rollen & Stereotype</h3>
-                <p>Diese Facharbeit unterscheidet zwischen dem <strong>biologischen Geschlecht</strong> und den <strong>gesellschaftlichen Vorstellungen</strong>, die mit „männlich" und „weiblich" verbunden werden.</p>
-                <div class="definition-box">
-                  <div class="def-item">
-                    <span class="def-title">Geschlechterrollen</span>
-                    <span class="def-text">Gesellschaftliche Erwartungen an das Verhalten, die Interessen, Kleidung und Berufe von Mädchen, Jungen, Frauen und Männern.</span>
-                  </div>
-                  <div class="def-item">
-                    <span class="def-title">Geschlechterstereotype</span>
-                    <span class="def-text">Vereinfachte, verallgemeinernde Annahmen – z. B. dass Mädchen mit Puppen spielen und Jungen mit Autos.</span>
-                  </div>
-                </div>
-                <p class="highlight-box">💡 Wichtig: Diese Vorstellungen sind <strong>nicht angeboren</strong>, sondern durch gesellschaftliche Normen geprägt.</p>
-              </div>
-              <div class="tab-visual">
-                <div class="stereotype-examples">
-                  <div class="stereo-col stereo-girl">
-                    <div class="stereo-head">Mädchen</div>
-                    <div class="stereo-tags">
-                      <span>🎀 Puppen</span>
-                      <span>🩷 Pink</span>
-                      <span>👗 Kleider</span>
-                      <span>🍳 Kochen</span>
-                    </div>
-                  </div>
-                  <div class="stereo-col stereo-boy">
-                    <div class="stereo-head">Jungen</div>
-                    <div class="stereo-tags">
-                      <span>🦕 Dinos</span>
-                      <span>💚 Grün</span>
-                      <span>🚗 Autos</span>
-                      <span>🔧 Technik</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="visual-caption">Typische Stereotype – laut Gesellschaft, nicht laut Biologie.</p>
-              </div>
+          <div class="definition-grid">
+            <div class="def-card">
+              <div class="def-icon">👥</div>
+              <div class="def-title">Geschlechterrollen</div>
+              <div class="def-text">Gesellschaftliche Erwartungen, die durch kulturelle Prägung mit Jungen, Mädchen, Männern oder Frauen verbunden sind. Sie betreffen Verhalten, Interessen, Kleidung, Aufgabenverteilung und Berufe.</div>
+            </div>
+            <div class="def-card">
+              <div class="def-icon">🏷️</div>
+              <div class="def-title">Geschlechterstereotype</div>
+              <div class="def-text">Vereinfachte, verallgemeinernde Annahmen – z. B. dass Mädchen lieber mit Puppen spielen, Jungen lieber mit Fahrzeugen oder Dinosauriern, Frauen eher für Kochen zuständig seien und Männer eher technische Berufe ausüben.</div>
             </div>
           </div>
 
-          <div class="tab-content" id="tab-entstehung">
-            <div class="tab-inner">
-              <div class="tab-text">
-                <h3>Wann entstehen Geschlechterrollen?</h3>
-                <p>Laut <strong>Kanka, Wagner, Schober & Spiel (2014)</strong> entwickeln Kinder schon sehr früh klare Ideen von Geschlechterrollen. Kurz nachdem sie sich selbst einem Geschlecht zuordnen können, verbinden sie damit auch Vorstellungen über „angemessenes" Verhalten.</p>
-                <p>Ab etwa <strong>5 Jahren</strong> haben viele Kinder bereits recht feste Vorstellungen davon, wie sich ein Junge oder Mädchen verhalten sollte.</p>
-                <p>Auch <strong>Segura-Nebot et al. (2025)</strong> betonen, dass Kinder Stereotype schon früh aufnehmen – und dass diese ihre Zukunftsvorstellungen und sozialen Interaktionen beeinflussen.</p>
-                <p class="highlight-box">✅ Gute Nachricht: Gezielte gegenstereotypische Erzählungen können diese frühen Stereotype reduzieren.</p>
+          <div class="stereo-visual">
+            <div class="stereo-col stereo-girl">
+              <div class="stereo-head">🩷 Typisch „Mädchen"</div>
+              <div class="stereo-tags">
+                <span>🎀 Puppen</span>
+                <span>🩷 Farbe Pink</span>
+                <span>👗 Kleider</span>
+                <span>🍳 Kochen</span>
+                <span>💅 Fingernägel lackieren</span>
               </div>
-              <div class="tab-visual">
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <div class="tl-dot"></div>
-                    <div class="tl-content">
-                      <strong>~2–3 Jahre</strong>
-                      <p>Kind ordnet sich einem Geschlecht zu</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="tl-dot"></div>
-                    <div class="tl-content">
-                      <strong>~3–4 Jahre</strong>
-                      <p>Erste geschlechtliche Zuordnungen von Spielzeug & Farben</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="tl-dot"></div>
-                    <div class="tl-content">
-                      <strong>~5 Jahre</strong>
-                      <p>Relativ feste Vorstellungen von Geschlechterrollen</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="tl-dot"></div>
-                    <div class="tl-content">
-                      <strong>Kindergartenzeit</strong>
-                      <p>Stereotype beeinflussen Spielverhalten & Sozialinteraktion</p>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="stereo-col stereo-boy">
+              <div class="stereo-head">💙 Typisch „Jungen"</div>
+              <div class="stereo-tags">
+                <span>🦕 Dinosaurier</span>
+                <span>💚 Farbe Grün</span>
+                <span>🚗 Autos</span>
+                <span>🔧 Technik</span>
+                <span>⚽ Fußball</span>
               </div>
             </div>
           </div>
+          <p class="visual-caption">⚠️ Achtung: Diese Zuordnungen sind gesellschaftlich konstruiert – <strong>nicht biologisch bedingt</strong>.</p>
 
-          <div class="tab-content" id="tab-einfluss">
-            <div class="tab-inner">
-              <div class="tab-text">
-                <h3>Was beeinflusst Geschlechterrollen?</h3>
-                <p><strong>Geschichten & Erzählungen:</strong> Seitz, Lenhart & Rübsam (2020) zeigen, dass Kinder Aktivitäten nach dem Geschlecht der Figur in Büchern einordnen. Kinder interessieren sich stärker für neue Tätigkeiten, wenn die Figur dasselbe Geschlecht hat wie sie selbst.</p>
-                <p><strong>Soziales & kulturelles Umfeld:</strong> Kanka et al. zeigen, dass stereotypische Einstellungen mit dem Alter und dem kulturellen Wissen (sog. „kristallisierte Intelligenz") zunehmen. Gesellschaftliche Normen werden aktiv weitergegeben.</p>
-                <p class="highlight-box">📚 Das bedeutet: Stereotype sind <strong>lernbar und veränderbar</strong> – durch Vorbilder, Bücher und pädagogische Impulse.</p>
+          <div class="info-box">
+            💡 <strong>Wichtig:</strong> Diese Vorstellungen sind <strong>nicht angeboren</strong>, sondern durch gesellschaftliche Normen und kulturelles Wissen geprägt. Das zeigt sich u. a. daran, dass sie kulturell und historisch variieren. Laut <a href="quellen.html#kanka" class="inline-link">Kanka et al. (2014)</a> spielt sogenannte „kristallisierte Intelligenz" – also kulturell vermitteltes Wissen – eine entscheidende Rolle.
+          </div>
+        </div>
+
+        <!-- 2.2 ENTSTEHUNG -->
+        <div id="entstehung" class="content-block">
+          <h3 class="content-h3">2.2 Entstehung von Geschlechterrollen im Kindesalter</h3>
+          <p>Die Forschung zeigt, dass Kinder bereits sehr früh geschlechtsbezogene Vorstellungen bilden. Laut <a href="quellen.html#kanka" class="inline-link">Kanka, Wagner, Schober &amp; Spiel (2014)</a> entwickeln Kinder schon im frühen Alter genaue Ideen von Geschlechterrollen. Kurz nachdem sie sich selbst einem Geschlecht zuordnen können, verbinden sie damit auch die Ansicht, welches Verhalten für Jungen oder Mädchen „angemessen" sei.</p>
+          <p>Die Studie mit <strong>266 Kindern</strong> im Alter von 3;12 bis 7;00 Jahren zeigt deutlich stereotypische Werte und belegt, dass geschlechterstereotypische Einstellungen <em>mit dem Alter zunehmen</em>. Dies spricht dafür, dass die Übernahme von Stereotypen ein aktiver Lernprozess ist, der durch die Umwelt angetrieben wird.</p>
+          <p>Auch <a href="quellen.html#segura" class="inline-link">Segura-Nebot, de Lemus, Baltar &amp; Montañés Muro (2025)</a> betonen, dass Kinder Geschlechterstereotype schon früh aufnehmen. Diese frühen Vorstellungen beeinflussen Zukunftsvorstellungen sowie soziale Interaktionen. Die Studie zeigt außerdem: Durch <strong>gezielte gegenstereotypische Erzählungen</strong> können solche frühen Stereotype reduziert werden.</p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <strong>~2–3 Jahre</strong>
+                <p>Kind ordnet sich selbst einem Geschlecht zu</p>
               </div>
-              <div class="tab-visual">
-                <div class="influence-diagram">
-                  <div class="influence-center">Kind</div>
-                  <div class="influence-item inf-1">📖 Bücher & Geschichten</div>
-                  <div class="influence-item inf-2">👨‍👩‍👧 Familie & Vorbilder</div>
-                  <div class="influence-item inf-3">🎭 Kultur & Normen</div>
-                  <div class="influence-item inf-4">🧒 Gleichaltrige</div>
-                </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <strong>~3–4 Jahre</strong>
+                <p>Erste geschlechtliche Zuordnungen von Spielzeug, Farben und Kleidung</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <strong>~5 Jahre</strong>
+                <p>Relativ feste Vorstellungen davon, wie sich ein Junge oder Mädchen verhalten sollte</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <strong>Kindergartenzeit</strong>
+                <p>Stereotype beeinflussen Spielverhalten, Sozialinteraktion und Zukunftsvorstellungen (<a href="quellen.html#kanka" class="inline-link">Kanka et al., 2014</a>)</p>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- 2.3 EINFLÜSSE -->
+        <div id="einfluss" class="content-block">
+          <h3 class="content-h3">2.3 Einfluss von Geschichten, sozialem Umfeld und kulturellen Normen</h3>
+
+          <p>Ein wichtiger Einflussfaktor sind Erzählungen und Geschichten. <a href="quellen.html#seitz" class="inline-link">Seitz, Lenhart &amp; Rübsam (2020)</a> untersuchten, ob Vorschulkinder Geschlechterstereotype aus Geschichten lernen. Die Ergebnisse zeigen, dass Kinder Aktivitäten nach dem Geschlecht der Figur einordneten – der Einfluss der <em>Hauptfigur</em> war dabei stärker als der von Nebenfiguren. Außerdem interessierten sich die Kinder stärker für neue Aktivitäten, wenn das Geschlecht der Figur dem eigenen Geschlecht entsprach.</p>
+
+          <p>Auch das soziale und kulturelle Umfeld spielt eine wichtige Rolle: <a href="quellen.html#kanka" class="inline-link">Kanka et al.</a> zeigen, dass geschlechterstereotypische Einstellungen mit dem Alter und dem kulturellen Wissen zusammenhängen. Das spricht dafür, dass Geschlechterstereotype <strong>nicht angeboren, sondern stark durch gesellschaftliche Normen vermittelt</strong> werden.</p>
+
+          <p><a href="quellen.html#segura" class="inline-link">Segura-Nebot et al.</a> kommen ebenfalls zu dem Ergebnis, dass stereotypische Zuschreibungen von Spielzeug und beruflichen Rollen reduziert werden können, wenn Kinder gezielt mit gegenstereotypischen Geschichten und Gesprächen konfrontiert werden.</p>
+
+          <div class="influence-grid">
+            <div class="influence-center-box">
+              <div class="influence-center">👶<br><small>Kind</small></div>
+            </div>
+            <div class="influence-items">
+              <div class="influence-item">📖 Bücher &amp; Geschichten<br><small>(Seitz et al., 2020)</small></div>
+              <div class="influence-item">👨‍👩‍👧 Familie &amp; Vorbilder</div>
+              <div class="influence-item">🎭 Kultur &amp; Normen</div>
+              <div class="influence-item">🧒 Gleichaltrige</div>
+              <div class="influence-item">📺 Medien &amp; Werbung</div>
+              <div class="influence-item">🏫 Pädagogische Impulse<br><small>(Segura-Nebot et al., 2025)</small></div>
+            </div>
+          </div>
+
+          <div class="info-box info-box-green">
+            ✅ <strong>Fazit:</strong> Geschlechterstereotype sind <strong>lernbar – und veränderbar</strong>. Durch gezielte pädagogische Impulse, Vorbilder und gegenstereotypische Erzählungen können Kinder ein offeneres Rollenverständnis entwickeln. Das macht das Thema gesellschaftlich besonders relevant. Mehr dazu in der <a href="diskussion.html" class="inline-link">Diskussion</a>.
+          </div>
+
+          <!-- Externer Hinweis -->
+          <div class="external-links-box">
+            <div class="ext-title">🔗 Weiterführende Informationen</div>
+            <ul class="ext-list">
+              <li><a href="https://de.wikipedia.org/wiki/Geschlechterrolle" target="_blank" rel="noopener" class="ext-link">Wikipedia: Geschlechterrolle <span class="ext-icon">↗</span></a></li>
+              <li><a href="https://de.wikipedia.org/wiki/Geschlechtsstereotyp" target="_blank" rel="noopener" class="ext-link">Wikipedia: Geschlechtsstereotyp <span class="ext-icon">↗</span></a></li>
+              <li><a href="https://www.bpb.de/themen/gender-diversitaet/geschlechtliche-vielfalt-trans/" target="_blank" rel="noopener" class="ext-link">Bundeszentrale für politische Bildung: Gender &amp; Vielfalt <span class="ext-icon">↗</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ZUSAMMENFASSUNG -->
+        <div class="summary-box">
+          <strong>Zusammenfassung:</strong> Kinder nehmen Geschlechterrollen früh wahr. Diese Vorstellungen werden durch Umwelt, Erzählungen und kulturelle Normen erlernt und können durch pädagogische Einflüsse <em>verändert</em> werden. Die eigene Befragung dieser Facharbeit setzt genau hier an – sie untersucht, wie die <a href="methode.html" class="inline-link">17 befragten Kindergartenkinder</a> Stereotypen zuordnen.
+        </div>
+
         <div class="page-nav-buttons">
-          <a href="index.html" class="btn btn-outline">← Überblick</a>
+          <a href="index.html" class="btn btn-outline">← Start</a>
           <a href="methode.html" class="btn btn-primary">Zur Methode →</a>
         </div>
       </div>
@@ -158,10 +176,14 @@
   <footer class="footer">
     <div class="container">
       <p>Facharbeit von <strong>Mina Pöppe</strong> · Gymnasium Uslar · Seminarfach „männlich und weiblich" · 18. März 2026</p>
-      <p class="footer-small">Quellen: Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)</p>
+      <p class="footer-small">
+        <a href="quellen.html" class="footer-link">Quellen</a> ·
+        Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)
+      </p>
     </div>
   </footer>
 
+  <button class="back-to-top" id="backToTop" aria-label="Nach oben">↑</button>
   <script src="script.js"></script>
 </body>
 </html>

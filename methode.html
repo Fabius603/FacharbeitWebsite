@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <div class="progress-bar" id="progressBar"></div>
+
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="site-brand">← Facharbeit · Mina Pöppe · 2026</a>
@@ -16,60 +18,153 @@
 
   <nav class="sticky-nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html">Überblick</a>
+      <a href="index.html">Start</a>
       <a href="grundlagen.html">Grundlagen</a>
       <a href="methode.html" class="active">Methode</a>
       <a href="ergebnisse.html">Ergebnisse</a>
       <a href="diskussion.html">Diskussion</a>
       <a href="fazit.html">Fazit</a>
+      <a href="quellen.html">Quellen</a>
     </div>
   </nav>
 
   <main>
     <section id="methode" class="section">
       <div class="container">
-        <div class="section-label">Methodisches Vorgehen</div>
-        <h2>Wie wurde untersucht?</h2>
-        <p class="section-intro">Um herauszufinden, welche Vorstellungen Kinder von Geschlechterrollen haben, wurde eine kindgerechte Befragung durchgeführt.</p>
+        <div class="section-label">Kapitel 4 · Methodisches Vorgehen</div>
+        <h2>Wie wurde die Befragung durchgeführt?</h2>
+        <p class="section-intro">Um herauszufinden, wie Kinder im Kindergartenalter <a href="grundlagen.html#begriffe" class="inline-link">Geschlechterstereotype</a> wahrnehmen, wurde eine eigene kindgerechte Befragung entwickelt und durchgeführt.</p>
 
-        <div class="method-grid">
-          <div class="method-card">
-            <div class="method-num">01</div>
-            <h3>Design</h3>
-            <p>Kindgerechte Befragung zu alltäglichen Bereichen: Spielzeug, Farben, Kleidung, Haare, Fingernägel, Alltagstätigkeiten und Berufe.</p>
-            <p>Antwortmöglichkeiten: <span class="badge badge-girl">Mädchen</span> <span class="badge badge-boy">Jungen</span> <span class="badge badge-both">Beide</span></p>
+        <!-- 4.1 UNTERSUCHUNGSDESIGN -->
+        <div id="design" class="content-block">
+          <h3 class="content-h3">4.1 Untersuchungsdesign</h3>
+          <p>Zur Beantwortung der <a href="index.html#hypothese" class="inline-link">Forschungsfrage</a> wurde eine kindgerechte Befragung durchgeführt. Die Fragen bezogen sich auf verschiedene alltägliche Bereiche, in denen stereotypische Vorstellungen häufig auftreten:</p>
+
+          <div class="topic-grid">
+            <div class="topic-card">🧸 Spielzeug</div>
+            <div class="topic-card">🎨 Farben</div>
+            <div class="topic-card">💅 Äußeres Erscheinungsbild</div>
+            <div class="topic-card">👗 Kleidung</div>
+            <div class="topic-card">🏠 Alltagstätigkeiten</div>
+            <div class="topic-card">💼 Berufe</div>
           </div>
-          <div class="method-card">
-            <div class="method-num">02</div>
-            <h3>Stichprobe</h3>
-            <div class="sample-visual">
-              <div class="sample-bar">
-                <div class="sample-fill fill-girl" style="width: 53%"></div>
-                <div class="sample-fill fill-boy" style="width: 47%"></div>
+
+          <p style="margin-top:1.2rem;">Die Kinder sollten jeweils angeben, ob etwas ihrer Meinung nach eher zu <span class="badge badge-girl">Mädchen</span>, eher zu <span class="badge badge-boy">Jungen</span> oder zu <span class="badge badge-both">Beiden</span> passt. Die Antwortmöglichkeit „beide" wurde bewusst eingebaut, um neutrale Haltungen gegenüber Stereotypen sichtbar zu machen.</p>
+        </div>
+
+        <!-- 4.2 STICHPROBE -->
+        <div id="stichprobe" class="content-block">
+          <h3 class="content-h3">4.2 Stichprobe</h3>
+          <p>An der Befragung nahmen insgesamt <strong>17 Kindergartenkinder</strong> teil – alle aus derselben Kindergartengruppe.</p>
+
+          <div class="sample-detail">
+            <div class="sample-chart">
+              <!-- SVG Tortendiagramm -->
+              <svg viewBox="0 0 200 200" class="pie-chart" aria-label="Stichprobe: 9 Mädchen, 8 Jungen">
+                <!-- Mädchen: 9/17 = 53% → 190.6° → bis 190.6° -->
+                <!-- Jungen: 8/17 = 47% → 169.4° -->
+                <circle cx="100" cy="100" r="80" fill="#fce7f3"/>
+                <!-- Jungen-Segment (blau) -->
+                <path d="M100,100 L100,20 A80,80 0 0,0 100,180 Z" fill="#bfdbfe" />
+                <!-- Mädchen Label -->
+                <text x="65" y="85" font-size="13" fill="#db2777" font-weight="bold">Mädchen</text>
+                <text x="72" y="100" font-size="18" fill="#db2777" font-weight="bold">9</text>
+                <!-- Jungen Label -->
+                <text x="115" y="130" font-size="13" fill="#1d4ed8" font-weight="bold">Jungen</text>
+                <text x="128" y="145" font-size="18" fill="#1d4ed8" font-weight="bold">8</text>
+              </svg>
+            </div>
+            <div class="sample-info">
+              <div class="sample-stat">
+                <span class="stat-num stat-pink">9</span>
+                <span class="stat-label">Mädchen</span>
               </div>
-              <div class="sample-legend">
-                <span><span class="dot dot-girl"></span>9 Mädchen</span>
-                <span><span class="dot dot-boy"></span>8 Jungen</span>
+              <div class="sample-stat">
+                <span class="stat-num stat-blue">8</span>
+                <span class="stat-label">Jungen</span>
+              </div>
+              <div class="sample-stat">
+                <span class="stat-num stat-purple">3–6</span>
+                <span class="stat-label">Jahre alt</span>
+              </div>
+              <div class="sample-stat">
+                <span class="stat-num stat-gray">1</span>
+                <span class="stat-label">Kindergartengruppe</span>
               </div>
             </div>
-            <p>17 Kinder, 3–6 Jahre alt, aus einer Kindergartengruppe.</p>
           </div>
-          <div class="method-card">
-            <div class="method-num">03</div>
-            <h3>Fragen (Auswahl)</h3>
-            <ul class="question-list">
-              <li>Für wen sind Puppen? Für wen sind Dinos?</li>
-              <li>Für wen ist Pink / Grün?</li>
-              <li>Wer darf bunte Fingernägel / lange Haare haben?</li>
-              <li>Wer darf Kleider tragen?</li>
-              <li>Wer arbeitet in diesem Beruf?</li>
-            </ul>
+
+          <div class="info-box">
+            ⚠️ <strong>Hinweis zur Repräsentativität:</strong> Mit nur 17 Kindern aus einer einzigen Kindergartengruppe ist die Stichprobe relativ klein. Eine Verallgemeinerung der Ergebnisse auf die Gesamtheit der Kindergartenkinder ist daher nur eingeschränkt möglich. Mehr dazu unter <a href="ergebnisse.html#grenzen" class="inline-link">Grenzen der Methode</a>.
           </div>
-          <div class="method-card">
-            <div class="method-num">04</div>
-            <h3>Auswertung</h3>
-            <p>Quantitative Stimmenzählung – Antworten von Mädchen und Jungen wurden <strong>getrennt gezählt</strong>, um Unterschiede sichtbar zu machen.</p>
-            <p>Ergänzt durch Vergleich mit 3 wissenschaftlichen Studien.</p>
+        </div>
+
+        <!-- 4.3 DURCHFÜHRUNG -->
+        <div id="durchführung" class="content-block">
+          <h3 class="content-h3">4.3 Durchführung</h3>
+          <p>Die Kinder wurden zu mehreren Fragen befragt, die jeweils auf bestimmte stereotypische Zuordnungen zielten. Zum Teil wurde mit <strong>Bildern</strong> gearbeitet, die die Fragen für die Kinder anschaulicher machen sollten.</p>
+
+          <div class="questions-layout">
+            <div class="q-category">
+              <div class="q-cat-label">🧸 Spielzeug</div>
+              <ul class="question-list">
+                <li>Für wen sind Puppen zum Spielen?</li>
+                <li>Für wen sind Dinos zum Spielen?</li>
+                <li>Für wen ist ein Ball / ein Pferd?</li>
+              </ul>
+            </div>
+            <div class="q-category">
+              <div class="q-cat-label">🎨 Farben</div>
+              <ul class="question-list">
+                <li>Für wen ist die Farbe Pink?</li>
+                <li>Für wen ist die Farbe Grün?</li>
+              </ul>
+            </div>
+            <div class="q-category">
+              <div class="q-cat-label">💅 Aussehen &amp; Kleidung</div>
+              <ul class="question-list">
+                <li>Wer darf bunte Fingernägel haben?</li>
+                <li>Wer darf lange Haare haben?</li>
+                <li>Wer darf Kleider tragen?</li>
+                <li>Wer darf Schuhe mit Absatz tragen? <em>(Bild)</em></li>
+              </ul>
+            </div>
+            <div class="q-category">
+              <div class="q-cat-label">🏠 Rollen im Alltag</div>
+              <ul class="question-list">
+                <li>Wer macht mehr zuhause?</li>
+                <li>Wer arbeitet in diesem Beruf? <em>(Bild)</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.4 AUSWERTUNG -->
+        <div id="auswertung" class="content-block">
+          <h3 class="content-h3">4.4 Auswertung</h3>
+          <p>Die Auswertung erfolgte <strong>quantitativ</strong> in Form einer Stimmenzählung: Für jede Frage wurde gezählt, wie viele Kinder die jeweilige Antwort „Mädchen", „Jungen" oder „beides" wählten.</p>
+          <p>Bei der Auszählung wurden außerdem die Stimmen der Jungen und Mädchen <strong>getrennt gezählt</strong>, sodass ein Vergleich zwischen den Ansichten beider Gruppen möglich ist. Die Ergebnisse dieser Auswertung sind auf der Seite <a href="ergebnisse.html" class="inline-link">„Ergebnisse"</a> dargestellt.</p>
+
+          <div class="method-schema">
+            <div class="schema-step">
+              <div class="schema-num">1</div>
+              <div class="schema-text"><strong>Frage stellen</strong><br>mit optionalem Bild</div>
+            </div>
+            <div class="schema-arrow">→</div>
+            <div class="schema-step">
+              <div class="schema-num">2</div>
+              <div class="schema-text"><strong>Kind antwortet</strong><br>Mädchen / Jungen / Beide</div>
+            </div>
+            <div class="schema-arrow">→</div>
+            <div class="schema-step">
+              <div class="schema-num">3</div>
+              <div class="schema-text"><strong>Stimmen zählen</strong><br>getrennt nach Geschlecht</div>
+            </div>
+            <div class="schema-arrow">→</div>
+            <div class="schema-step">
+              <div class="schema-num">4</div>
+              <div class="schema-text"><strong>Auswertung</strong><br>Muster &amp; Vergleich</div>
+            </div>
           </div>
         </div>
 
@@ -84,10 +179,14 @@
   <footer class="footer">
     <div class="container">
       <p>Facharbeit von <strong>Mina Pöppe</strong> · Gymnasium Uslar · Seminarfach „männlich und weiblich" · 18. März 2026</p>
-      <p class="footer-small">Quellen: Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)</p>
+      <p class="footer-small">
+        <a href="quellen.html" class="footer-link">Quellen</a> ·
+        Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)
+      </p>
     </div>
   </footer>
 
+  <button class="back-to-top" id="backToTop" aria-label="Nach oben">↑</button>
   <script src="script.js"></script>
 </body>
 </html>

@@ -64,7 +64,7 @@ if (resultsSection) {
 }
 
 // ===== SCROLL FADE-IN =====
-const fadeEls = document.querySelectorAll('.card, .method-card, .disc-card, .study-card, .takeaway');
+const fadeEls = document.querySelectorAll('.card, .method-card, .disc-card, .study-card, .takeaway, .source-card, .def-card');
 
 const fadeObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -82,4 +82,31 @@ fadeEls.forEach(el => {
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, box-shadow 0.25s ease';
   fadeObserver.observe(el);
 });
+
+// ===== PROGRESS BAR =====
+const progressBar = document.getElementById('progressBar');
+if (progressBar) {
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = progress + '%';
+  });
+}
+
+// ===== BACK TO TOP =====
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
