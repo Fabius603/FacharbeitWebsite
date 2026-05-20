@@ -10,28 +10,49 @@
 
   <div class="progress-bar" id="progressBar"></div>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="site-brand">← Facharbeit · Mina Pöppe · 2026</a>
-    </div>
-  </header>
-
-  <nav class="sticky-nav" id="nav">
+  <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html">Start</a>
-      <a href="grundlagen.html">Grundlagen</a>
-      <a href="methode.html">Methode</a>
-      <a href="ergebnisse.html">Ergebnisse</a>
-      <a href="diskussion.html">Diskussion</a>
-      <a href="fazit.html" class="active">Fazit</a>
-      <a href="quellen.html">Quellen</a>
+      <a href="index.html" class="nav-logo">Geschlechterrollen&nbsp;·&nbsp;Kinder</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-group">
+          <button class="nav-group-btn">Facharbeit <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="index.html" class="nav-link">Übersicht</a>
+            <a href="grundlagen.html" class="nav-link">Grundlagen</a>
+            <a href="methode.html" class="nav-link">Methode</a>
+            <a href="ergebnisse.html" class="nav-link">Ergebnisse</a>
+            <a href="diskussion.html" class="nav-link">Diskussion</a>
+            <a href="fazit.html" class="nav-link">Fazit</a>
+            <a href="quellen.html" class="nav-link">Quellen</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-btn">Fachbegriffe <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="geschlechterrolle.html" class="nav-link">Geschlechterrolle</a>
+            <a href="stereotypen.html" class="nav-link">Stereotyp</a>
+            <a href="sozialisation.html" class="nav-link">Sozialisation</a>
+            <a href="gender.html" class="nav-link">Gender</a>
+            <a href="stereotype-threat.html" class="nav-link">Stereotype Threat</a>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Facharbeit</a>
+      <span>›</span>
+      <span class="breadcrumb-current">Fazit</span>
+    </div>
+  </div>
 
   <main>
     <section id="fazit" class="section section-alt">
       <div class="container">
-        <div class="section-label">Kapitel 7 · Fazit</div>
+
+        <div class="section-label">Fazit</div>
         <h2>Das Wichtigste in Kürze</h2>
 
         <div class="fazit-layout">
@@ -57,12 +78,20 @@
           </div>
         </div>
 
-        <div class="page-nav-buttons">
-          <a href="diskussion.html" class="btn btn-outline">← Diskussion</a>
-          <a href="quellen.html" class="btn btn-primary">Zu den Quellen →</a>
+        <div class="related-topics">
+          <p class="related-label">Verwandte Themen</p>
+          <div class="related-links">
+            <a href="diskussion.html" class="related-link">
+              <span class="related-link-title">Diskussion</span>
+              <span class="related-link-why">Die ausführliche Einordnung der Ergebnisse</span>
+            </a>
+            <a href="sozialisation.html" class="related-link">
+              <span class="related-link-title">Wie lernen Kinder Geschlechterrollen?</span>
+              <span class="related-link-why">Was man dagegen tun kann – Pädagogik</span>
+            </a>
+          </div>
         </div>
-        <div class="page-nav-buttons" style="margin-top:0.5rem;">
-          <a href="index.html" class="btn btn-outline">↩ Zurück zum Start</a>
+
         </div>
       </div>
     </section>
@@ -71,10 +100,7 @@
   <footer class="footer">
     <div class="container">
       <p>Facharbeit von <strong>Mina Pöppe</strong> · Gymnasium Uslar · Seminarfach „männlich und weiblich" · 18. März 2026</p>
-      <p class="footer-small">
-        <a href="quellen.html" class="footer-link">Quellen</a> ·
-        Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)
-      </p>
+
     </div>
   </footer>
 

@@ -1,3 +1,24 @@
+// ===== ACTIVE NAV LINK =====
+const path = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-link').forEach(link => {
+  if (link.getAttribute('href') === path) link.classList.add('nav-active');
+});
+
+// ===== MOBILE NAV TOGGLE =====
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('nav-open');
+  });
+  // Close nav when clicking a link on mobile
+  navMenu.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('nav-open');
+    });
+  });
+}
+
 // ===== TAB SYSTEM (Grundlagen) =====
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
@@ -34,9 +55,11 @@ function animateBars(container) {
   const bars = container.querySelectorAll('.bar-fill');
   bars.forEach(bar => {
     const target = bar.style.width;
+    bar.style.transition = 'none';
     bar.style.width = '0%';
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
+        bar.style.transition = '';
         bar.style.width = target;
       });
     });
@@ -48,23 +71,8 @@ window.addEventListener('load', () => {
   if (activeRtab) animateBars(activeRtab);
 });
 
-// ===== INTERSECTION OBSERVER – animate bars when section enters viewport =====
-const resultsSection = document.getElementById('ergebnisse');
-if (resultsSection) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const activeTab = document.querySelector('.rtab-content.active');
-        if (activeTab) animateBars(activeTab);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-  observer.observe(resultsSection);
-}
-
 // ===== SCROLL FADE-IN =====
-const fadeEls = document.querySelectorAll('.card, .method-card, .disc-card, .study-card, .takeaway, .source-card, .def-card');
+const fadeEls = document.querySelectorAll('.card, .chapter-card, .glossar-card, .method-card, .disc-card, .study-card, .takeaway, .source-card, .def-card');
 
 const fadeObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

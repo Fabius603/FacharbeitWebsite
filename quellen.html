@@ -10,28 +10,48 @@
 
   <div class="progress-bar" id="progressBar"></div>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="site-brand">← Facharbeit · Mina Pöppe · 2026</a>
-    </div>
-  </header>
-
-  <nav class="sticky-nav" id="nav">
+  <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html">Start</a>
-      <a href="grundlagen.html">Grundlagen</a>
-      <a href="methode.html">Methode</a>
-      <a href="ergebnisse.html">Ergebnisse</a>
-      <a href="diskussion.html">Diskussion</a>
-      <a href="fazit.html">Fazit</a>
-      <a href="quellen.html" class="active">Quellen</a>
+      <a href="index.html" class="nav-logo">Geschlechterrollen&nbsp;·&nbsp;Kinder</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-group">
+          <button class="nav-group-btn">Facharbeit <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="index.html" class="nav-link">Übersicht</a>
+            <a href="grundlagen.html" class="nav-link">Grundlagen</a>
+            <a href="methode.html" class="nav-link">Methode</a>
+            <a href="ergebnisse.html" class="nav-link">Ergebnisse</a>
+            <a href="diskussion.html" class="nav-link">Diskussion</a>
+            <a href="fazit.html" class="nav-link">Fazit</a>
+            <a href="quellen.html" class="nav-link">Quellen</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-btn">Fachbegriffe <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="geschlechterrolle.html" class="nav-link">Geschlechterrolle</a>
+            <a href="stereotypen.html" class="nav-link">Stereotyp</a>
+            <a href="sozialisation.html" class="nav-link">Sozialisation</a>
+            <a href="gender.html" class="nav-link">Gender</a>
+            <a href="stereotype-threat.html" class="nav-link">Stereotype Threat</a>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Facharbeit</a>
+      <span>›</span>
+      <span class="breadcrumb-current">Quellen</span>
+    </div>
+  </div>
 
   <main>
     <section id="quellen" class="section section-alt">
       <div class="container">
-        <div class="section-label">Kapitel 8 · Anhang</div>
+        <div class="section-label">Quellenverzeichnis</div>
         <h2>Literaturverzeichnis</h2>
         <p class="section-intro">Die drei wissenschaftlichen Studien, auf die sich diese Facharbeit stützt, sind im Folgenden vollständig nach APA-Format angegeben. Alle Studien sind online über DOI abrufbar.</p>
 
@@ -44,7 +64,7 @@
             <div class="source-journal">European Journal of Social &amp; Behavioural Sciences, 8(1), 56–63.</div>
             <div class="source-doi">
               <a href="https://doi.org/10.15405/ejsbs.112" target="_blank" rel="noopener" class="doi-link">
-                🔗 DOI: 10.15405/ejsbs.112
+                DOI: 10.15405/ejsbs.112
               </a>
             </div>
             <div class="source-summary">
@@ -62,7 +82,7 @@
             <div class="source-journal">British Journal of Developmental Psychology, 38(3), 363–390.</div>
             <div class="source-doi">
               <a href="https://doi.org/10.1111/bjdp.12323" target="_blank" rel="noopener" class="doi-link">
-                🔗 DOI: 10.1111/bjdp.12323
+                DOI: 10.1111/bjdp.12323
               </a>
             </div>
             <div class="source-summary">
@@ -80,7 +100,7 @@
             <div class="source-journal">Social Psychology of Education, 28, Article 123.</div>
             <div class="source-doi">
               <a href="https://doi.org/10.1007/s11218-025-10077-x" target="_blank" rel="noopener" class="doi-link">
-                🔗 DOI: 10.1007/s11218-025-10077-x
+                DOI: 10.1007/s11218-025-10077-x
               </a>
             </div>
             <div class="source-summary">
@@ -94,18 +114,13 @@
           <h3 class="content-h3">Weiterführende Informationen</h3>
           <p>Zum Hintergrundwissen dieser Facharbeit wurden außerdem folgende öffentlich zugängliche Quellen konsultiert:</p>
           <div class="external-links-box">
-            <div class="ext-title">🌐 Externe Quellen</div>
+            <div class="ext-title">Externe Quellen</div>
             <ul class="ext-list">
               <li><a href="https://de.wikipedia.org/wiki/Geschlechterrolle" target="_blank" rel="noopener" class="ext-link">Wikipedia: Geschlechterrolle ↗</a></li>
               <li><a href="https://www.bpb.de/themen/gender-diversitaet/geschlechtliche-vielfalt-trans/500210/geschlechterrollen/" target="_blank" rel="noopener" class="ext-link">Bundeszentrale für politische Bildung (bpb): Geschlechterrollen ↗</a></li>
               <li><a href="https://de.wikipedia.org/wiki/Geschlechterstereotyp" target="_blank" rel="noopener" class="ext-link">Wikipedia: Geschlechterstereotyp ↗</a></li>
             </ul>
           </div>
-        </div>
-
-        <div class="page-nav-buttons">
-          <a href="fazit.html" class="btn btn-outline">← Fazit</a>
-          <a href="index.html" class="btn btn-primary">↩ Zurück zum Start</a>
         </div>
       </div>
     </section>
@@ -114,9 +129,7 @@
   <footer class="footer">
     <div class="container">
       <p>Facharbeit von <strong>Mina Pöppe</strong> · Gymnasium Uslar · Seminarfach „männlich und weiblich" · 18. März 2026</p>
-      <p class="footer-small">
-        Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)
-      </p>
+
     </div>
   </footer>
 

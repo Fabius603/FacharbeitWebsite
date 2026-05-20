@@ -8,183 +8,102 @@
 </head>
 <body>
 
-  <!-- READING PROGRESS -->
   <div class="progress-bar" id="progressBar"></div>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-content">
-      <span class="hero-tag">Facharbeit · Mina Pöppe · Gymnasium Uslar · 2026</span>
-      <h1>Wie nehmen Kinder<br><span class="accent">Geschlechterrollen</span> wahr?</h1>
-      <p class="hero-sub">Eine eigene Befragung von 17 Kindergartenkindern und eine Auswertung von drei wissenschaftlichen Studien untersuchen, wie <a href="grundlagen.html#begriffe" class="hero-link">Geschlechterstereotype</a> im frühen Kindesalter entstehen und wirken.</p>
-      <div class="hero-buttons">
-        <a href="#ueberblick" class="btn btn-primary">Zum Überblick ↓</a>
-        <a href="ergebnisse.html" class="btn btn-outline">Direkt zu den Ergebnissen</a>
-      </div>
-    </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="floating-item item-1">🧸</div>
-      <div class="floating-item item-2">🦕</div>
-      <div class="floating-item item-3">🎨</div>
-      <div class="floating-item item-4">👗</div>
-      <div class="floating-item item-5">🌸</div>
-    </div>
-    <a href="#ueberblick" class="scroll-hint" aria-label="Nach unten scrollen">
-      <span class="scroll-arrow">↓</span>
-    </a>
-  </header>
-
-  <!-- NAV -->
-  <nav class="sticky-nav" id="nav">
+  <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="active">Start</a>
-      <a href="grundlagen.html">Grundlagen</a>
-      <a href="methode.html">Methode</a>
-      <a href="ergebnisse.html">Ergebnisse</a>
-      <a href="diskussion.html">Diskussion</a>
-      <a href="fazit.html">Fazit</a>
-      <a href="quellen.html">Quellen</a>
+      <a href="index.html" class="nav-logo">Geschlechterrollen&nbsp;·&nbsp;Kinder</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-group">
+          <button class="nav-group-btn">Facharbeit <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="index.html" class="nav-link">Übersicht</a>
+            <a href="grundlagen.html" class="nav-link">Grundlagen</a>
+            <a href="methode.html" class="nav-link">Methode</a>
+            <a href="ergebnisse.html" class="nav-link">Ergebnisse</a>
+            <a href="diskussion.html" class="nav-link">Diskussion</a>
+            <a href="fazit.html" class="nav-link">Fazit</a>
+            <a href="quellen.html" class="nav-link">Quellen</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-btn">Fachbegriffe <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="geschlechterrolle.html" class="nav-link">Geschlechterrolle</a>
+            <a href="stereotypen.html" class="nav-link">Stereotyp</a>
+            <a href="sozialisation.html" class="nav-link">Sozialisation</a>
+            <a href="gender.html" class="nav-link">Gender</a>
+            <a href="stereotype-threat.html" class="nav-link">Stereotype Threat</a>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 
+  <header class="hub-hero">
+    <p class="hub-hero-meta">Facharbeit · Mina Pöppe · Gymnasium Uslar · 2026</p>
+    <h1>Wie nehmen Kinder<br><span class="accent">Geschlechterrollen</span> wahr?</h1>
+    <p>Eine Befragung von 17 Kindergartenkindern zeigt: Kinder ordnen Spielzeug, Farben und Berufe bereits im Vorschulalter klar einem Geschlecht zu – oft einstimmig. Diese Seite gibt einen Überblick über die Facharbeit. Jeder Abschnitt kann als eigenständige Vertiefung erkundet werden.</p>
+
+  </header>
+
   <main>
 
-    <!-- EINLEITUNG -->
-    <section id="ueberblick" class="section">
+    <!-- FORSCHUNGSFRAGE -->
+    <section class="section section-alt" style="padding: 2.5rem 2rem;">
       <div class="container">
-        <div class="section-label">Das Thema</div>
-        <h2>Worum geht es?</h2>
-        <p class="section-intro">Erste Vorstellungen darüber, was als typisch männlich oder typisch weiblich gilt, entwickeln Kinder schon sehr früh. Sie äußern sich beispielsweise dadurch, dass Puppen häufig eher mit Mädchen und Dinosaurier eher mit Jungen verbunden werden. Obwohl solche Auffassungen oft als selbstverständlich gelten, sind sie <strong>nicht angeboren</strong>, sondern durch gesellschaftliche Normen geprägt.</p>
-
-        <div class="intro-quote">
-          <span class="quote-mark">"</span>
-          <p>Wie unterscheiden sich Vorstellungen von „typisch männlich" und „typisch weiblich" zwischen Jungen und Mädchen im Kindergartenalter?</p>
-          <span class="quote-attr">— Forschungsfrage dieser Arbeit</span>
-        </div>
-
-        <p class="section-body">Das Thema ist gesellschaftlich relevant, weil frühe <a href="grundlagen.html#begriffe" class="inline-link">Geschlechtswahrnehmungen</a> Einfluss darauf haben können, was Kinder sich zutrauen, womit sie spielen und welche Interessen sie entwickeln. Wenn Kinder bereits früh merken, dass bestimmte Dinge als „nur für Jungs" oder „nur für Mädchen" gelten, kann dies ihre Entwicklung einengen. Grundlage dieser Facharbeit ist eine <a href="methode.html" class="inline-link">eigene Befragung</a> von 17 Kindergartenkindern sowie drei <a href="diskussion.html#studien" class="inline-link">wissenschaftliche Vergleichsstudien</a>.</p>
-
-        <div class="cards-grid" style="margin-top:2.5rem;">
-          <a href="grundlagen.html" class="card card-pink card-link">
-            <div class="card-icon">📚</div>
-            <h3>Theoretische Grundlagen</h3>
-            <p>Was sind Geschlechterrollen? Wie entstehen sie – und was beeinflusst sie?</p>
-          </a>
-          <a href="methode.html" class="card card-purple card-link">
-            <div class="card-icon">🔬</div>
-            <h3>Methodisches Vorgehen</h3>
-            <p>17 Kinder, 9 Bereiche, 3 Antwortmöglichkeiten – wie die Befragung aufgebaut war.</p>
-          </a>
-          <a href="ergebnisse.html" class="card card-blue card-link">
-            <div class="card-icon">📊</div>
-            <h3>Ergebnisse</h3>
-            <p>Puppen: 16 von 17 Stimmen für Mädchen. Dinos: 17 von 17 für Jungen. Alle Daten im Überblick.</p>
-          </a>
-          <a href="diskussion.html" class="card card-green card-link">
-            <div class="card-icon">💬</div>
-            <h3>Diskussion & Fazit</h3>
-            <p>Was bestätigt die Hypothese? Was wurde widerlegt? Einordnung mit drei Studien.</p>
-          </a>
+        <div class="research-box">
+          <p>Forschungsfrage: „Wie unterscheiden sich Vorstellungen von ‚typisch männlich' und ‚typisch weiblich' zwischen Jungen und Mädchen im Kindergartenalter?"</p>
         </div>
       </div>
     </section>
 
-    <!-- HYPOTHESE + ÜBERBLICK -->
-    <section class="section section-alt" id="hypothese">
-      <div class="container">
-        <div class="section-label">Hypothese &amp; Ergebnis</div>
-        <h2>Was wurde untersucht – und was kam heraus?</h2>
+    <!-- FACHARBEIT PROSA -->
+    <section id="kapitel" class="section">
+      <div class="container hub-prose">
 
-        <div class="hypo-layout">
-          <div class="hypo-box hypo-left">
-            <div class="hypo-label">Hypothese</div>
-            <p>„Kinder ordnen Spielsachen, Berufe und Emotionen <strong>weniger geschlechterstereotypisch</strong> zu als Erwachsene, wobei Jungs sich eher an Stereotypen orientieren als Mädchen."</p>
-          </div>
-          <div class="hypo-arrow">→</div>
-          <div class="hypo-box hypo-right">
-            <div class="hypo-label result-label">Ergebnis</div>
-            <p>Die Hypothese konnte <strong>nur teilweise</strong> bestätigt werden. Stereotype sind zwar vorhanden, aber Jungen und Mädchen zeigen <a href="ergebnisse.html#geschlechtervergleich" class="inline-link">ähnlich viel Spielraum</a>. Ein Erwachsenenvergleich fehlt.</p>
-          </div>
-        </div>
+        <p>Die Arbeit beginnt mit einer theoretischen Grundlage: Bevor Kinder befragt wurden, wurden zentrale Konzepte wie <a href="geschlechterrolle.html" class="inline-link">Geschlechterrollen</a>, <a href="stereotypen.html" class="inline-link">Geschlechterstereotype</a> und <a href="sozialisation.html" class="inline-link">Sozialisation</a> definiert und in den Forschungsstand eingeordnet. Was bedeutet es, wenn ein Kind Spielzeug, Farben oder Berufe als „für Mädchen" oder „für Jungen" einstuft – und warum passiert das bereits im Vorschulalter? Die <a href="grundlagen.html" class="inline-link">Grundlagen</a> gehen dieser Frage anhand von drei wissenschaftlichen Studien nach.</p>
 
-        <!-- Mini-Ergebnis-Visualisierung -->
-        <div class="result-preview">
-          <div class="result-preview-title">Auswahl der auffälligsten Ergebnisse:</div>
-          <div class="preview-bars">
-            <div class="prev-item">
-              <div class="prev-label">🦕 Dinos → Jungen</div>
-              <div class="prev-bar"><div class="prev-fill prev-boy" style="width:100%">17/17</div></div>
-            </div>
-            <div class="prev-item">
-              <div class="prev-label">🧸 Puppen → Mädchen</div>
-              <div class="prev-bar"><div class="prev-fill prev-girl" style="width:94%">16/17</div></div>
-            </div>
-            <div class="prev-item">
-              <div class="prev-label">🩷 Pink → Mädchen</div>
-              <div class="prev-bar"><div class="prev-fill prev-girl" style="width:94%">16/17</div></div>
-            </div>
-            <div class="prev-item">
-              <div class="prev-label">💚 Grün → Jungen</div>
-              <div class="prev-bar"><div class="prev-fill prev-boy" style="width:100%">17/17</div></div>
-            </div>
-            <div class="prev-item">
-              <div class="prev-label">👗 Kleider → Mädchen</div>
-              <div class="prev-bar"><div class="prev-fill prev-girl" style="width:88%">15/17</div></div>
-            </div>
-          </div>
-          <a href="ergebnisse.html" class="btn btn-primary" style="margin-top:1.5rem;">Alle Ergebnisse im Detail →</a>
-        </div>
+        <p>Für die eigene Befragung wurden 17 Kindergartenkinder im Alter von 3 bis 6 Jahren einzeln interviewt. Sie bekamen Bildkarten gezeigt und ordneten sie den Kategorien „Mädchen", „Jungen" oder „Beide" zu. Wie genau das ablief, welche ethischen Überlegungen dabei eine Rolle spielten und wie die Daten ausgewertet wurden, ist in der <a href="methode.html" class="inline-link">Methode</a> beschrieben.</p>
+
+        <p>Die <a href="ergebnisse.html" class="inline-link">Ergebnisse</a> sprechen eine deutliche Sprache: Bei Dinosauriern und der Farbe Grün sagten alle 17 Kinder „Jungen", bei Puppen und Pink waren es 16 von 17. Über alle 12 Fragen hinweg zeigt sich ein klares Muster – aber auch einzelne überraschende Ausnahmen, die zeigen, dass stereotype Zuordnungen nicht universal sind.</p>
+
+        <p>In der <a href="diskussion.html" class="inline-link">Diskussion</a> werden diese Befunde mit drei Vergleichsstudien in Beziehung gesetzt. Die Hypothese, dass Jungen und Mädchen sich in der Stärke ihrer Stereotypisierung unterscheiden, ließ sich dabei nur teilweise bestätigen. Stattdessen zeigt sich, dass Stereotype in diesem Alter bei beiden Geschlechtern ähnlich stark ausgeprägt sind – ein Befund, der für das Verständnis von <a href="gender.html" class="inline-link">Gender</a> und von Phänomenen wie dem <a href="stereotype-threat.html" class="inline-link">Stereotype Threat</a> von Bedeutung ist.</p>
+
+        <p>Das <a href="fazit.html" class="inline-link">Fazit</a> fasst zusammen, was diese Ergebnisse bedeuten: Kinder verankern Geschlechterstereotype früh und tief – aber Offenheit ist möglich. Wer Kinder mit vielfältigen Vorbildern großzieht, kann dazu beitragen, Stereotype zu lockern. Alle zitierten Studien und Quellen sind im <a href="quellen.html" class="inline-link">Quellenverzeichnis</a> dokumentiert.</p>
+
       </div>
     </section>
 
-    <!-- SEITENÜBERSICHT -->
-    <section class="section" id="seitenübersicht">
+    <!-- KERNERGEBNIS -->
+    <section class="section">
       <div class="container">
-        <div class="section-label">Navigationsübersicht</div>
-        <h2>Aufbau des Hypertextes</h2>
-        <p class="section-intro">Die Facharbeit ist in thematische Abschnitte gegliedert, die jeweils einzeln gelesen oder gezielt angesteuert werden können.</p>
-
-        <div class="sitemap">
-          <div class="sitemap-item">
-            <a href="grundlagen.html" class="sitemap-link">
-              <span class="sitemap-num">1</span>
-              <span class="sitemap-title">Theoretische Grundlagen</span>
-              <span class="sitemap-desc">Begriffe, Entstehung von Stereotypen, Einflussfaktoren</span>
-            </a>
+        <div class="section-label">Kernergebnis</div>
+        <h2>Zentrale Erkenntnis</h2>
+        <div class="key-finding">
+          <div class="kf-text">
+            <strong>Kinder entwickeln Geschlechterstereotype deutlich früher als oft angenommen.</strong> Bereits mit 3–6 Jahren ordnen sie Farben, Spielzeug und Berufe klar einem Geschlecht zu – ein Zeichen, wie stark gesellschaftliche Prägung wirkt, lange bevor Kinder lesen lernen. Nur in wenigen Bereichen (z. B. lange Haare, bunte Fingernägel) zeigten die Kinder nennenswerte Offenheit.
           </div>
-          <div class="sitemap-item">
-            <a href="methode.html" class="sitemap-link">
-              <span class="sitemap-num">2</span>
-              <span class="sitemap-title">Methodisches Vorgehen</span>
-              <span class="sitemap-desc">Design, Stichprobe, Durchführung, Auswertung</span>
+        </div>
+        <div class="related-topics">
+          <div class="related-label">Weiterführende Seiten</div>
+          <div class="related-links">
+            <a href="ergebnisse.html" class="related-link">
+              <span class="related-link-title">Alle Ergebnisse</span>
+              <span class="related-link-why">Alle 12 Fragen mit vollständigen Daten</span>
             </a>
-          </div>
-          <div class="sitemap-item">
-            <a href="ergebnisse.html" class="sitemap-link">
-              <span class="sitemap-num">3</span>
-              <span class="sitemap-title">Darstellung der Ergebnisse</span>
-              <span class="sitemap-desc">Alle Daten aus der Befragung, Grenzen der Methode</span>
+            <a href="diskussion.html" class="related-link">
+              <span class="related-link-title">Diskussion</span>
+              <span class="related-link-why">Vergleich mit drei Studien</span>
             </a>
-          </div>
-          <div class="sitemap-item">
-            <a href="diskussion.html" class="sitemap-link">
-              <span class="sitemap-num">4</span>
-              <span class="sitemap-title">Diskussion</span>
-              <span class="sitemap-desc">Einordnung der Ergebnisse, Hypothesenprüfung, Vergleichsstudien</span>
+            <a href="grundlagen.html" class="related-link">
+              <span class="related-link-title">Grundlagen</span>
+              <span class="related-link-why">Theoretischer Hintergrund</span>
             </a>
-          </div>
-          <div class="sitemap-item">
-            <a href="fazit.html" class="sitemap-link">
-              <span class="sitemap-num">5</span>
-              <span class="sitemap-title">Fazit</span>
-              <span class="sitemap-desc">Zusammenfassung, gesellschaftliche Relevanz, Ausblick</span>
-            </a>
-          </div>
-          <div class="sitemap-item">
-            <a href="quellen.html" class="sitemap-link">
-              <span class="sitemap-num">6</span>
-              <span class="sitemap-title">Quellenverzeichnis</span>
-              <span class="sitemap-desc">Alle Studien mit DOI-Links und Bildnachweise</span>
+            <a href="sozialisation.html" class="related-link">
+              <span class="related-link-title">Sozialisation</span>
+              <span class="related-link-why">Wie Kinder Rollen lernen</span>
             </a>
           </div>
         </div>
@@ -196,10 +115,7 @@
   <footer class="footer">
     <div class="container">
       <p>Facharbeit von <strong>Mina Pöppe</strong> · Gymnasium Uslar · Seminarfach „männlich und weiblich" · 18. März 2026</p>
-      <p class="footer-small">
-        <a href="quellen.html" class="footer-link">Quellen</a> ·
-        Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)
-      </p>
+
     </div>
   </footer>
 

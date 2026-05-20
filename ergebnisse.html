@@ -10,227 +10,356 @@
 
   <div class="progress-bar" id="progressBar"></div>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="site-brand">← Facharbeit · Mina Pöppe · 2026</a>
-    </div>
-  </header>
-
-  <nav class="sticky-nav" id="nav">
+  <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html">Start</a>
-      <a href="grundlagen.html">Grundlagen</a>
-      <a href="methode.html">Methode</a>
-      <a href="ergebnisse.html" class="active">Ergebnisse</a>
-      <a href="diskussion.html">Diskussion</a>
-      <a href="fazit.html">Fazit</a>
-      <a href="quellen.html">Quellen</a>
+      <a href="index.html" class="nav-logo">Geschlechterrollen&nbsp;·&nbsp;Kinder</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-group">
+          <button class="nav-group-btn">Facharbeit <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="index.html" class="nav-link">Übersicht</a>
+            <a href="grundlagen.html" class="nav-link">Grundlagen</a>
+            <a href="methode.html" class="nav-link">Methode</a>
+            <a href="ergebnisse.html" class="nav-link">Ergebnisse</a>
+            <a href="diskussion.html" class="nav-link">Diskussion</a>
+            <a href="fazit.html" class="nav-link">Fazit</a>
+            <a href="quellen.html" class="nav-link">Quellen</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-btn">Fachbegriffe <span class="nav-caret">▾</span></button>
+          <div class="nav-dropdown">
+            <a href="geschlechterrolle.html" class="nav-link">Geschlechterrolle</a>
+            <a href="stereotypen.html" class="nav-link">Stereotyp</a>
+            <a href="sozialisation.html" class="nav-link">Sozialisation</a>
+            <a href="gender.html" class="nav-link">Gender</a>
+            <a href="stereotype-threat.html" class="nav-link">Stereotype Threat</a>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Facharbeit</a>
+      <span>›</span>
+      <span class="breadcrumb-current">Ergebnisse</span>
+    </div>
+  </div>
 
   <main>
     <section id="ergebnisse" class="section section-alt">
       <div class="container">
-        <div class="section-label">Kapitel 5 · Darstellung der Ergebnisse</div>
+
+        <div class="section-label">Ergebnisse der Befragung</div>
         <h2>Was hat die Befragung ergeben?</h2>
         <p class="section-intro">Die Ergebnisse zeigen ein deutliches Bild: Kinder im Kindergartenalter nehmen sehr klare geschlechtliche Zuordnungen vor – in fast allen <a href="methode.html#design" class="inline-link">befragten Bereichen</a>. Besonders Spielzeug, Farben und Kleidung wurden nahezu einstimmig einem Geschlecht zugeordnet.</p>
 
         <div class="results-tabs" id="results-tabs">
           <div class="rtab-buttons">
-            <button class="rtab-btn active" data-rtab="spielzeug">🧸 Spielzeug</button>
-            <button class="rtab-btn" data-rtab="farben">🎨 Farben</button>
-            <button class="rtab-btn" data-rtab="aussehen">💅 Aussehen</button>
-            <button class="rtab-btn" data-rtab="rollen">🏠 Rollen</button>
+            <button class="rtab-btn active" data-rtab="spielzeug">Spielzeug</button>
+            <button class="rtab-btn" data-rtab="farben">Farben</button>
+            <button class="rtab-btn" data-rtab="aussehen">Aussehen</button>
+            <button class="rtab-btn" data-rtab="rollen">Rollen</button>
           </div>
 
           <div class="rtab-content active" id="rtab-spielzeug">
+            <p class="rtab-intro">Spielzeug gehört zu den Bereichen mit den klarsten Zuordnungen. Dinosaurier wurden von <em>allen</em> 17 Kindern als „Jungensache" eingestuft – einstimmig, über beide Gruppen hinweg.</p>
             <div class="result-grid">
               <div class="result-item">
-                <h4>Puppen</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 94%"><span>16</span></div></div>
+                <h4>Für wen sind Puppen zum Spielen?</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 100%"><span>8</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"><span></span></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 6%"><span>1</span></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 89%"><span>8</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 11%"><span>1</span></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">16 von 17 Stimmen – eindeutig Mädchen zugeschrieben.</p>
+                <p class="result-note">Alle 8 Jungen sagten „Mädchen". Bei den Mädchen sagte nur 1 von 9 „Beide" – kein Kind ordnete Puppen Jungen zu.</p>
               </div>
               <div class="result-item">
-                <h4>Dinosaurier</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 0%"></div></div>
+                <h4>Für wen sind Dinos zum Spielen?</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 100%"><span>8</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 100%"><span>17</span></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 100%"><span>9</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">17 von 17 Stimmen – einstimmig Jungen zugeschrieben.</p>
+                <p class="result-note">17 von 17 – einstimmig in beiden Gruppen. Kein einziges Kind wählte „Mädchen" oder „Beide".</p>
               </div>
             </div>
           </div>
 
           <div class="rtab-content" id="rtab-farben">
+            <p class="rtab-intro">Farben zeigen die stärksten Muster. Pink und Grün werden nahezu einstimmig einem Geschlecht zugeordnet. Auffällig: Während alle 9 Mädchen Pink als „Mädchensache" sahen, ließ 1 Junge es offen.</p>
             <div class="result-grid">
               <div class="result-item">
-                <h4>Pink 🩷</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 94%"><span>16</span></div></div>
+                <h4>Für wen ist die Farbe Pink?</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 88%"><span>7</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 13%"><span>1</span></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 6%"><span>1</span></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 100%"><span>9</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">Farben sind bereits fest mit Geschlecht verknüpft.</p>
+                <p class="result-note">Alle 9 Mädchen sagten „Mädchen". Der einzige Ausreißer war 1 Junge, der „Beide" wählte.</p>
               </div>
               <div class="result-item">
-                <h4>Grün 💚</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 0%"></div></div>
+                <h4>Für wen ist die Farbe Grün?</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 100%"><span>8</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 100%"><span>17</span></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 100%"><span>9</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">Einstimmig Jungen zugeschrieben – beinahe wie Dinos.</p>
+                <p class="result-note">Einstimmig in beiden Gruppen – Grün gilt als Jungensache, ohne jede Ausnahme.</p>
               </div>
             </div>
           </div>
 
           <div class="rtab-content" id="rtab-aussehen">
+            <p class="rtab-intro">Im Bereich Aussehen zeigen sich interessante Unterschiede zwischen Jungen und Mädchen. Bei Fingernägeln und Haaren waren die Jungen überraschend offen – sie sagten deutlich häufiger „Beide" als die Mädchen.</p>
             <div class="result-grid">
               <div class="result-item">
-                <h4>Bunte Fingernägel</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 53%"><span>9</span></div></div>
+                <h4>Wer darf bunte Fingernägel haben?</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 38%"><span>3</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 63%"><span>5</span></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 47%"><span>8</span></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 67%"><span>6</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 33%"><span>3</span></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">Hier zeigt sich mehr Offenheit – fast die Hälfte sagt „beide".</p>
+                <p class="result-note">Auffälliger Unterschied: 5 von 8 Jungen sagten „Beide", aber nur 3 von 9 Mädchen. Hier dachten die Mädchen stereotyper als die Jungen.</p>
               </div>
               <div class="result-item">
-                <h4>Kleider</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 88%"><span>15</span></div></div>
+                <h4>Wer darf lange Haare haben?</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 38%"><span>3</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 63%"><span>5</span></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 12%"><span>2</span></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 56%"><span>5</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 44%"><span>4</span></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">Kleidung ist besonders stark geschlechtlich codiert.</p>
+                <p class="result-note">Wieder offener bei Jungen (5/8 „Beide") als bei Mädchen (4/9 „Beide"). Beide Gruppen ordnen Haarlänge weniger streng zu als Kleidung.</p>
+              </div>
+              <div class="result-item">
+                <h4>Wer darf Kleider tragen?</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 88%"><span>7</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 13%"><span>1</span></div></div></div>
+                    </div>
+                  </div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 89%"><span>8</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 11%"><span>1</span></div></div></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="result-note">Beide Gruppen sind sich einig: Kleider gehören zu Mädchen – je 1 Kind je Gruppe sagte „Beide".</p>
+              </div>
+              <div class="result-item">
+                <h4>Wer darf solche Schuhe tragen? (Bild 5 – schwarze Stiefel mit Absatz)</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 75%"><span>6</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 25%"><span>2</span></div></div></div>
+                    </div>
+                  </div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 100%"><span>9</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="result-note">Kein einziges Mädchen sagte „Beide" – alle 9 ordneten die Stiefel Mädchen zu. Die 2 „Beide"-Stimmen kamen aus der Jungengruppe.</p>
+              </div>
+              <div class="result-item">
+                <h4>Wer darf sich schminken? (Bild 4)</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 88%"><span>7</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 13%"><span>1</span></div></div></div>
+                    </div>
+                  </div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 89%"><span>8</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 11%"><span>1</span></div></div></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="result-note">Fast identische Antworten in beiden Gruppen: Schminken gilt als Mädchensache – je 1 Kind sagte „Beide".</p>
               </div>
             </div>
           </div>
 
           <div class="rtab-content" id="rtab-rollen">
+            <p class="rtab-intro">Bei gesellschaftlichen Rollen differenzieren die Kinder stärker. Beim Müll rausbringen zeigen Jungen und Mädchen unterschiedliche Antwortmuster. Beim Friseurberuf waren beide Gruppen ähnlich eindeutig.</p>
             <div class="result-grid">
               <div class="result-item">
-                <h4>Wer macht mehr zuhause?</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 41%"><span>7</span></div></div>
+                <h4>Wer bringt den Müll raus? (Bild 1)</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 50%"><span>4</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 50%"><span>4</span></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 12%"><span>2</span></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 47%"><span>8</span></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 33%"><span>3</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 22%"><span>2</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 44%"><span>4</span></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">Häusliche Tätigkeiten werden eher mit Frauen verbunden.</p>
+                <p class="result-note">Interessant: Kein einziger Junge ordnete das Müll rausbringen dem Vater zu – die 2 Stimmen für „Jungen/Vater" kamen ausschließlich von Mädchen.</p>
               </div>
               <div class="result-item">
-                <h4>Beruf (gezeigtes Bild)</h4>
-                <div class="bar-chart">
-                  <div class="bar-row">
-                    <span class="bar-label">Mädchen</span>
-                    <div class="bar-track"><div class="bar-fill bar-girl" style="width: 82%"><span>14</span></div></div>
+                <h4>Wer arbeitet als Friseur? (Bild 2)</h4>
+                <div class="split-chart">
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Jungen (8)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 75%"><span>6</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 0%"></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 25%"><span>2</span></div></div></div>
+                    </div>
                   </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Jungen</span>
-                    <div class="bar-track"><div class="bar-fill bar-boy" style="width: 6%"><span>1</span></div></div>
-                  </div>
-                  <div class="bar-row">
-                    <span class="bar-label">Beide</span>
-                    <div class="bar-track"><div class="bar-fill bar-both" style="width: 12%"><span>2</span></div></div>
+                  <div class="split-chart-half">
+                    <span class="split-group-label">Mädchen (9)</span>
+                    <div class="bar-chart">
+                      <div class="bar-row"><span class="bar-label">Mädchen</span><div class="bar-track"><div class="bar-fill bar-girl" style="width: 89%"><span>8</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Jungen</span><div class="bar-track"><div class="bar-fill bar-boy" style="width: 11%"><span>1</span></div></div></div>
+                      <div class="bar-row"><span class="bar-label">Beide</span><div class="bar-track"><div class="bar-fill bar-both" style="width: 0%"></div></div></div>
+                    </div>
                   </div>
                 </div>
-                <p class="result-note">Überraschend: Dieser Beruf wurde überwiegend Mädchen zugeordnet – die Art des Berufs hat großen Einfluss.</p>
+                <p class="result-note">Beide Gruppen sehen den Friseurberuf überwiegend als weiblich. Nur 1 Mädchen sagte „Jungen", 2 Jungen sagten „Beide".</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="key-finding">
-          <div class="kf-icon">🔑</div>
+          <div class="key-finding">
           <div class="kf-text">
-            <strong>Zentrale Beobachtung:</strong> Mädchen waren bei Fragen zu Handlungen und Spielzeug flexibler eingestellt. Jungen zeigten dafür beim <em>äußeren Erscheinungsbild</em> eher mehr Offenheit. Insgesamt hielten sich die Unterschiede zwischen den Geschlechtern die Waage – mehr dazu in der <a href="diskussion.html" class="inline-link">Diskussion</a>.
+            <strong>Zentrale Beobachtung:</strong> Jungen zeigten bei Fragen zu Aussehen und Kleidung überraschend viel Offenheit – bei Fingernägeln und langen Haaren wählten 5 von 8 Jungen „Beide". Mädchen antworteten beim Haushalt etwas flexibler (2 Stimmen für „Vater"). Insgesamt hielten sich die Unterschiede zwischen den Gruppen die Waage – weder Jungen noch Mädchen dachten durchgehend stereotyper als die andere Gruppe. Mehr dazu in der <a href="diskussion.html" class="inline-link">Diskussion</a>.
           </div>
         </div>
 
         <div id="grenzen" class="content-block" style="margin-top:2.5rem;">
-          <h3 class="content-h3">5.2 Grenzen der Methode</h3>
-          <p>Die Methode ist für Kinder im Alter von 3 bis 6 Jahren gut geeignet, weil sie mit einfachen, alltagsnahen Fragen arbeitet. Dennoch gibt es mehrere Einschränkungen:</p>
-          <div class="info-box">
-            <ul style="padding-left:1.2rem; margin:0;">
-              <li>Die <a href="methode.html#stichprobe" class="inline-link">Stichprobe</a> mit 17 Kindern ist relativ klein – eine Verallgemeinerung der Ergebnisse ist nur eingeschränkt möglich.</li>
-              <li>Bilder und die Art der Fragestellung könnten die Antworten der Kinder beeinflusst haben.</li>
-              <li>Es kann nur eingeschränkt geprüft werden, ob Jungen sich stärker an Stereotypen orientieren als Mädchen, da die Stichprobe zu klein ist.</li>
-            </ul>
+          <h3 class="content-h3">Grenzen der Methode</h3>
+          <p>Die Methode ist für Kinder im Alter von 3 bis 6 Jahren gut geeignet, weil sie mit einfachen, alltagsnahen Fragen arbeitet. Dennoch gibt es mehrere Einschränkungen: Die <a href="methode.html#stichprobe" class="inline-link">Stichprobe</a> mit 17 Kindern ist relativ klein, eine Verallgemeinerung der Ergebnisse ist daher nur eingeschränkt möglich. Außerdem könnten Bilder und die Art der Fragestellung die Antworten der Kinder beeinflusst haben. Schließlich ist die Stichprobe zu klein, um verlässlich prüfen zu können, ob Jungen sich stärker an Stereotypen orientieren als Mädchen.</p>
+        </div>
+
+        <div class="related-topics">
+          <p class="related-label">Verwandte Themen</p>
+          <div class="related-links">
+            <a href="methode.html" class="related-link">
+              <span class="related-link-title">Wie wurde befragt?</span>
+              <span class="related-link-why">Design und Durchführung der Befragung</span>
+            </a>
+            <a href="diskussion.html" class="related-link">
+              <span class="related-link-title">Was bedeuten diese Ergebnisse?</span>
+              <span class="related-link-why">Einordnung und Vergleich mit drei Studien</span>
+            </a>
+            <a href="sozialisation.html" class="related-link">
+              <span class="related-link-title">Wie lernen Kinder Geschlechterrollen?</span>
+              <span class="related-link-why">Warum diese Ergebnisse nicht überraschen</span>
+            </a>
           </div>
         </div>
 
-        <div class="page-nav-buttons">
-          <a href="methode.html" class="btn btn-outline">← Methode</a>
-          <a href="diskussion.html" class="btn btn-primary">Zur Diskussion →</a>
-        </div>
       </div>
     </section>
   </main>
@@ -238,10 +367,7 @@
   <footer class="footer">
     <div class="container">
       <p>Facharbeit von <strong>Mina Pöppe</strong> · Gymnasium Uslar · Seminarfach „männlich und weiblich" · 18. März 2026</p>
-      <p class="footer-small">
-        <a href="quellen.html" class="footer-link">Quellen</a> ·
-        Kanka et al. (2014) · Seitz et al. (2020) · Segura-Nebot et al. (2025)
-      </p>
+
     </div>
   </footer>
 
