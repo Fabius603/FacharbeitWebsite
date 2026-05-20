@@ -1704,7 +1704,8 @@ h2 {
   z-index: 200;
   background: white;
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  border-top: 3px solid var(--accent);
 }
 
 .nav-inner {
@@ -1713,24 +1714,39 @@ h2 {
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  height: 54px;
+  height: 60px;
   gap: 0.25rem;
 }
 
 .nav-logo {
-  font-weight: 800;
-  font-size: 0.95rem;
-  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   text-decoration: none;
   white-space: nowrap;
   padding-right: 1.25rem;
   border-right: 1px solid var(--border);
   margin-right: 0.5rem;
   flex-shrink: 0;
-  transition: color var(--transition);
+  transition: opacity var(--transition);
+  line-height: 1.2;
 }
 
-.nav-logo:hover { color: var(--accent); }
+.nav-logo:hover { opacity: 0.75; }
+
+.nav-logo-sub {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.nav-logo-main {
+  font-size: 0.97rem;
+  font-weight: 800;
+  color: var(--text);
+}
 
 .nav-menu {
   display: flex;
@@ -2033,7 +2049,7 @@ h2 {
   .nav-menu {
     display: none;
     position: absolute;
-    top: 54px;
+    top: 63px;
     left: 0;
     right: 0;
     background: white;
