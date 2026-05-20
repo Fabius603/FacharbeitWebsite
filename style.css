@@ -52,6 +52,7 @@ body {
   color: var(--gray-800);
   background: var(--white);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* ===== HERO ===== */
@@ -306,7 +307,7 @@ body {
 .section { padding: 5rem 2rem; }
 .section-alt { background: var(--gray-50); }
 
-.container { max-width: 1000px; margin: 0 auto; }
+.container { max-width: 1000px; margin: 0 auto; padding-left: 1.25rem; padding-right: 1.25rem; }
 
 .section-label {
   font-size: 0.78rem;
@@ -366,7 +367,7 @@ h2 {
 .card-pink { background: var(--pink-light); border-left: 4px solid var(--pink-dark); }
 .card-purple { background: var(--purple-light); border-left: 4px solid var(--purple); }
 .card-blue { background: var(--blue-light); border-left: 4px solid var(--blue); }
-.card-green { background: var(--green-light); border-left: 4px solid var(--green); }
+.card-green { background: var(--accent-light); border-left: 4px solid var(--accent); }
 
 .card-icon { font-size: 2rem; margin-bottom: 0.8rem; }
 .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--gray-900); }
@@ -600,7 +601,7 @@ h2 {
 
 .badge-girl { background: var(--pink-light); color: var(--pink-dark); }
 .badge-boy { background: #dbeafe; color: #1d4ed8; }
-.badge-both { background: var(--green-light); color: #15803d; }
+.badge-both { background: var(--gray-100); color: var(--gray-600); }
 
 .sample-visual { margin: 0.8rem 0; }
 
@@ -765,7 +766,7 @@ h2 {
 
 .bar-girl { background: linear-gradient(90deg, var(--pink), var(--pink-dark)); }
 .bar-boy { background: linear-gradient(90deg, var(--blue), #2563eb); }
-.bar-both { background: linear-gradient(90deg, var(--green), #16a34a); }
+.bar-both { background: linear-gradient(90deg, #9ca3af, #6b7280); }
 
 .result-note { margin-top: 0.8rem; font-size: 0.83rem; color: var(--gray-500); font-style: italic; }
 
@@ -795,8 +796,8 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.disc-confirm { background: var(--green-light); border-top: 4px solid var(--green); }
-.disc-partial { background: #fffbeb; border-top: 4px solid #fbbf24; }
+.disc-confirm { background: var(--pink-light); border-top: 4px solid var(--pink-dark); }
+.disc-partial { background: var(--accent-light); border-top: 4px solid var(--accent); }
 .disc-limit { background: var(--blue-light); border-top: 4px solid var(--blue); }
 
 .disc-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
@@ -809,7 +810,7 @@ h2 {
 
 .studies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 1.2rem;
 }
 
@@ -931,11 +932,15 @@ h2 {
   .breadcrumb-nav { padding: 0.65rem 1rem; }
   .tab-btn { padding: 0.8rem 0.8rem; font-size: 0.82rem; }
   .rtab-btn { padding: 0.7rem 0.8rem; font-size: 0.82rem; }
+  .section { padding: 3rem 0; }
+  .hub-hero { padding: 2.5rem 1.25rem 2rem; }
 }
 
 @media (max-width: 480px) {
   .method-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 2rem; }
+  .section { padding: 2.5rem 0; }
+  .hub-hero { padding: 2rem 1rem 1.5rem; }
 }
 
 /* ===== SCROLL OFFSET FIX (for sticky nav) ===== */
@@ -1180,8 +1185,8 @@ h2 {
 
 /* ===== INFO BOX ===== */
 .info-box {
-  background: #fffbeb;
-  border-left: 4px solid #fbbf24;
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius-sm);
   padding: 1rem 1.2rem;
   font-size: 0.9rem;
@@ -1191,8 +1196,8 @@ h2 {
 }
 
 .info-box-green {
-  background: var(--green-light);
-  border-left: 4px solid var(--green);
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius-sm);
   padding: 1rem 1.2rem;
   font-size: 0.9rem;
@@ -1353,7 +1358,7 @@ h2 {
 }
 
 .hypo-left { background: var(--pink-light); border-left: 4px solid var(--pink-dark); }
-.hypo-right { background: var(--green-light); border-left: 4px solid var(--green); }
+.hypo-right { background: var(--blue-light); border-left: 4px solid var(--blue); }
 
 .hypo-arrow {
   font-size: 1.5rem;
@@ -1775,12 +1780,13 @@ h2 {
 .nav-dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 6px);
+  top: 100%;
   left: 0;
   background: white;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.4rem;
+  padding-top: 0.65rem;
   min-width: 175px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.1);
   z-index: 300;

@@ -24,6 +24,7 @@
             <a href="ergebnisse.html" class="nav-link">Ergebnisse</a>
             <a href="diskussion.html" class="nav-link">Diskussion</a>
             <a href="fazit.html" class="nav-link">Fazit</a>
+            <a href="reflexion.html" class="nav-link">Reflexion</a>
             <a href="quellen.html" class="nav-link">Quellen</a>
           </div>
         </div>
@@ -72,18 +73,21 @@
           <div class="sample-detail">
             <div class="sample-chart">
               <!-- SVG Tortendiagramm -->
-              <svg viewBox="0 0 200 200" class="pie-chart" aria-label="Stichprobe: 9 Mädchen, 8 Jungen">
-                <!-- Mädchen: 9/17 = 53% → 190.6° → bis 190.6° -->
-                <!-- Jungen: 8/17 = 47% → 169.4° -->
+              <svg viewBox="0 0 200 200" class="pie-chart" aria-label="Stichprobe: 9 Mädchen, 8 Jungen" style="overflow:visible">
+                <!-- Mädchen (pink): 9/17 ≈ 53% — left half + small bit, from 270° going clockwise -->
+                <!-- Arc: start top (0,-80), go left half = 180° = point (0,+80), then continue ~19° more -->
+                <!-- Simpler: fill the whole circle pink, then overlay blue segment for Jungen (47%) -->
                 <circle cx="100" cy="100" r="80" fill="#fce7f3"/>
-                <!-- Jungen-Segment (blau) -->
-                <path d="M100,100 L100,20 A80,80 0 0,0 100,180 Z" fill="#bfdbfe" />
-                <!-- Mädchen Label -->
-                <text x="65" y="85" font-size="13" fill="#db2777" font-weight="bold">Mädchen</text>
-                <text x="72" y="100" font-size="18" fill="#db2777" font-weight="bold">9</text>
-                <!-- Jungen Label -->
-                <text x="115" y="130" font-size="13" fill="#1d4ed8" font-weight="bold">Jungen</text>
-                <text x="128" y="145" font-size="18" fill="#1d4ed8" font-weight="bold">8</text>
+                <!-- Jungen segment: 8/17 ≈ 47% = 169.4° arc, starting from top going clockwise -->
+                <!-- start = (100, 20) = top. 169.4° clockwise: endpoint = (100 + 80*sin(169.4°), 100 - 80*cos(169.4°)) -->
+                <!-- sin(169.4°)=0.187, cos(169.4°)=-0.982 → x=100+14.9=114.9, y=100+78.6=178.6 -->
+                <path d="M100,100 L100,20 A80,80 0 0,1 114.9,178.6 Z" fill="#bfdbfe"/>
+                <!-- Mädchen label: center of left segment ~315° = upper-left area -->
+                <text x="62" y="88" font-size="12" fill="#db2777" font-weight="bold" text-anchor="middle">Mädchen</text>
+                <text x="62" y="104" font-size="20" fill="#db2777" font-weight="bold" text-anchor="middle">9</text>
+                <!-- Jungen label: center of right segment ~84° = lower-right area -->
+                <text x="138" y="140" font-size="12" fill="#1d4ed8" font-weight="bold" text-anchor="middle">Jungen</text>
+                <text x="138" y="156" font-size="20" fill="#1d4ed8" font-weight="bold" text-anchor="middle">8</text>
               </svg>
             </div>
             <div class="sample-info">
